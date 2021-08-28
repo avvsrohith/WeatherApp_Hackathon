@@ -1,19 +1,19 @@
 package com.example.weather.Model;
 
-public class Coordinates extends WeatherInfo{
-    private int lon;
-    private int lat;
+public class Coordinates {
+    private float lon;
+    private float lat;
 
-    public Coordinates(int lon, int lat) {
+    public Coordinates(float lon, float lat) {
         this.lon = lon;
         this.lat = lat;
     }
 
-    public int getLon() {
+    public float getLon() {
         return lon;
     }
 
-    public int getLat() {
+    public float getLat() {
         return lat;
     }
 }

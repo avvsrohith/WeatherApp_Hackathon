@@ -19,6 +19,7 @@ public class WeatherInfo {
         this.main = main;
         this.coord = coord;
     }
+    public WeatherInfo(){}
 
     public int getId() {
         return id;

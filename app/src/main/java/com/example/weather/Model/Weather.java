@@ -1,26 +1,28 @@
 package com.example.weather.Model;
 
-public class Weather extends WeatherInfo{
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-    private int id;
+import java.util.ArrayList;
+
+public class Weather {
+
+
+    @SerializedName("main")
+    @Expose
     private String main;
     private String description;
 
-    public Weather(int id, String main, String description) {
-        this.id = id;
+    public Weather(String main, String description) {
         this.main = main;
         this.description = description;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getMain() {
-        return main;
-    }
-
     public String getDescription() {
         return description;
+    }
+
+    public String getmain() {
+        return main;
     }
 }

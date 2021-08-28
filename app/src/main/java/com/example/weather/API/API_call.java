@@ -12,7 +12,7 @@ import retrofit2.http.Query;
 public interface API_call {
 
     @GET(BASE_URL)
-    Call<WeatherInfo> getWeather(
+    Call<WeatherInfo> getWeatherData(
         @Query("appid") String apikey,
         @Query("q") String Location
     );

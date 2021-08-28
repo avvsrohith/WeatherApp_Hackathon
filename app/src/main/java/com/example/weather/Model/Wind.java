@@ -1,13 +1,13 @@
 package com.example.weather.Model;
 
-public class Wind extends WeatherInfo{
-    private int speed;
+public class Wind {
+    private float speed;
 
-    public Wind(int speed) {
+    public Wind(float speed) {
         this.speed = speed;
     }
 
-    public int getSpeed() {
+    public float getSpeed() {
         return speed;
     }
 }

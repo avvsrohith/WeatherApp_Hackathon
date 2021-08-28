@@ -1,13 +1,13 @@
 package com.example.weather.Model;
 
-public class Main extends WeatherInfo{
-    private int temp;
-    private int pressure;
-    private int humidity;
-    private int temp_min;
-    private int temp_max;
+public class Main {
+    private float temp;
+    private float pressure;
+    private float humidity;
+    private float temp_min;
+    private float temp_max;
 
-    public Main(int temp, int pressure, int humidity, int temp_min, int temp_max) {
+    public Main(float temp, float pressure, float humidity, float temp_min, float temp_max) {
         this.temp = temp;
         this.pressure = pressure;
         this.humidity = humidity;
@@ -15,23 +15,23 @@ public class Main extends WeatherInfo{
         this.temp_max = temp_max;
     }
 
-    public int getTemp() {
+    public float getTemp() {
         return temp;
     }
 
-    public int getPressure() {
+    public float getPressure() {
         return pressure;
     }
 
-    public int getHumidity() {
+    public float getHumidity() {
         return humidity;
     }
 
-    public int getTemp_min() {
+    public float getTemp_min() {
         return temp_min;
     }
 
-    public int getTemp_max() {
+    public float getTemp_max() {
         return temp_max;
     }
 }
