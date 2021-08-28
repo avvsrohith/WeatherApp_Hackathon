@@ -13,8 +13,9 @@ import android.widget.TextView;
 
 public class DisplayFragment extends Fragment {
 
-    TextView condition,windtv,humiditytv,pressuretv, temptv,minmaxtv,loctv,coortv;
+    TextView condition,windtv,humiditytv,pressuretv, temptv,minmaxtv,coortv;
     public static ConstraintLayout c1,c2,c3,frameLayout;
+    public static TextView loctv;
 
 
 
@@ -61,5 +62,8 @@ public class DisplayFragment extends Fragment {
         loctv.setText(loc);
         coortv.setText(String.valueOf(longitude)+"/"+String.valueOf(latitude));
 
+    }
+    void  setCity(String city){
+        loctv.setText(city);
     }
 }

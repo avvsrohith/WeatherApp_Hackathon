@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
             fragmentManager.beginTransaction().add(R.id.fragmentContainerView,displayFragment,DISPLAY_TAG).commit();
         }
 
-        getData("Visakhapatnam");
+        getData(cityname);
 
     }
 
@@ -142,7 +142,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<WeatherInfo> call, Response<WeatherInfo> response) {
                         if (response.body() == null) {
-                            fragmentContainerView.setVisibility(View.INVISIBLE);
+                            displayFragment.setCity(cityname);
+
                         } else{
                              info= response.body();
                         displayFragment.setData(info.getWeather().get(0).getmain(),info.getWind().getSpeed(),info.getMain().getHumidity(),info.getMain().getPressure(),info.getMain().getTemp(),info.getMain().getTemp_max(),info.getMain().getTemp_min(),info.getName(),info.getCoord().getLon(),info.getCoord().getLat());

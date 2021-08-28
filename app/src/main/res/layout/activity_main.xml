@@ -4,20 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="#6782b4"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView"
             android:name="com.example.weather.DisplayFragment"
             android:layout_width="match_parent"
-            android:layout_margin="1dp"
-            android:layout_height="675dp" />
+            android:layout_height="672dp"
+            android:layout_margin="1dp" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomtabbar"
@@ -27,7 +36,6 @@
             app:itemIconSize="30dp"
             app:itemIconTint="#FFFFFF"
             app:menu="@menu/menu_navigation" />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
