@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/Mode"
         android:icon="@drawable/darkmode"
         android:title="" />
     <item
-        android:id="@+id/favourites"
+        android:id="@+id/tts"
         android:icon="@drawable/texttospeech"
         android:title="" />
     <item
